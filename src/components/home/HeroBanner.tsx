@@ -29,7 +29,7 @@ export default function HeroBanner() {
               hoàn hảo
             </span>
             <br />
-            cho ngày trọng đại
+            cho ngày trọng đại của bạn
           </h1>
 
           {/* Subtitle */}
