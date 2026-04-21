@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // Bỏ standalone do không dùng Docker
 };
 
 export default nextConfig;
