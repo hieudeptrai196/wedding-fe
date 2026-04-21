@@ -1,0 +1,21 @@
+services:
+  wedding-fe:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Thay đổi URL backend khi deploy
+        NEXT_PUBLIC_API_URL: http://3.27.207.13:8081
+    container_name: wedding-fe
+    ports:
+      - "8082:8082"
+    environment:
+      - NODE_ENV=production
+      - PORT=8082
+    restart: unless-stopped
+    networks:
+      - wedding-network
+
+networks:
+  wedding-network:
+    driver: bridge
